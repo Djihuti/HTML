@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: .
+    image: fable-space-engine:latest
+    container_name: fable-space-engine
+    ports:
+      # Host-Port per Umgebungsvariable aenderbar: WEB_PORT=9000 docker compose up -d
+      - "${WEB_PORT:-8088}:80"
+    restart: unless-stopped

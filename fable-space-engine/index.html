@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fable Space Engine</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #02030a;
+      }
+
+      /* Beide Canvas liegen deckungsgleich uebereinander: unten WebGL2, oben das 2D-HUD. */
+      #stage {
+        position: fixed;
+        inset: 0;
+      }
+
+      #stage canvas {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      #gl-canvas {
+        z-index: 0;
+      }
+
+      /* Das HUD faengt keine Eingaben ab - Maus/PointerLock gehen an das WebGL-Canvas. */
+      #hud-canvas {
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      #error {
+        position: fixed;
+        inset: 0;
+        z-index: 2;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+        box-sizing: border-box;
+        color: #ffb4a8;
+        background: rgba(2, 3, 10, 0.92);
+        font: 14px/1.5 ui-monospace, Consolas, monospace;
+        white-space: pre-wrap;
+        text-align: center;
+      }
+
+      #error[hidden] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <canvas id="gl-canvas"></canvas>
+      <canvas id="hud-canvas"></canvas>
+    </div>
+    <div id="error" hidden></div>
+    <!-- Fable kompiliert src/*.fs nach build/*.js; Vite buendelt von dort. -->
+    <script type="module" src="/build/Main.js"></script>
+  </body>
+</html>

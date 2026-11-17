@@ -1,0 +1,25 @@
+{
+  "name": "fable-space-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Modulare 3D-Engine und Weltraum-Prototyp mit Fable 5.2 (F# -> JS) und nativem WebGL2",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "restore": "dotnet tool restore",
+    "predev": "dotnet tool restore",
+    "dev": "dotnet fable watch src -o build --run vite",
+    "prebuild": "dotnet tool restore",
+    "build": "dotnet fable src -o build --run vite build",
+    "preview": "vite preview",
+    "clean": "dotnet fable clean src -o build --yes",
+    "docker:build": "docker compose build",
+    "docker:up": "docker compose up -d --build",
+    "docker:down": "docker compose down"
+  },
+  "devDependencies": {
+    "vite": "8.3.8"
+  }
+}

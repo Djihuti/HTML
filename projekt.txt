@@ -1,0 +1,52 @@
+1. Was wollen programmieren als Team ? (Web-Projekt)   (~ 8 Tage)
+
+Frontend - HTML, CSS, JS wobei die Logik trägt (Backend)
+
+GIT Repo --> Gemeinsam in dem Arbeiten 
+ 
+
+IT-Dienstleister / IT-Systemhaus 
+
+Kundenebene ---> Ansprechend klar
+ 
+ Idee : Web-Shop (Hardware) / Werkverkauf / Service
+ Idee : Parkplätze regional (ggf. mit API)
+
+ Interner Bereich (Mitarbeiter)
+ Funktionnal ----> gut und übersicht Nutzbar 
+ Idee : Arbeitszeiterfassung                         
+ Idee : Projektmanamgment Dashboard (KAN-Ban + Scrum) / Arbeitsplanung
+ 
+ Idee : Kostenabrechnung (Gehaltsabrechnung) / Wareneinkauf // 
+
+Aktuelle Aufgabe : 
+
+1. Design/Brand Ideen ---> Farben / Logos usw. 
+2. Mock-Ups / Design / Brand 
+
+
+Projekteinschränk ---> OHNE BACKEND (erstmal)
+
+ 
+
+
+
+
+
+
+
+ - Ziel / Nutzgruppe ?  KMU 
+
+
+ - Welche Technologien (HTML, CSS, JS) nutzen ? 
+
+
+ --------> Design ?! <--------
+
+ Brand Design ------> MOCKUP 
+ 
+
+
+
+
+ 
