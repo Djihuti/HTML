@@ -36,6 +36,7 @@ Projekteinschränk ---> OHNE BACKEND (erstmal)
 
 
  - Ziel / Nutzgruppe ?  KMU 
+ MB
 
 
  - Welche Technologien (HTML, CSS, JS) nutzen ? 
